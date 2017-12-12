@@ -19,11 +19,11 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>                        
       </button>
-      <a class="navbar-brand" href="#">Richard Lin</a>
     </div>
     <div>
       <div class="collapse navbar-collapse" id="myNavbar">
         <ul class="nav navbar-nav">
+          <li><a class="navbar-brand section1" href="#section1">Richard Lin</a></li>
           <li><a href="#section2">About Me</a></li>
           <li><a href="#section3">Education</a></li>
           <li><a href="#section41">Projects</a></li>
@@ -62,16 +62,6 @@
 
 <script>
 $(document).ready(function(){
-  $(window).on("scroll",function(){
-  	var wn = $(window).scrollTop();
-    if(wn > 120){
-      $(".navbar").css("background","rgba(1,1,1,.5)");
-    }
-    else{
-    	$(".navbar").css("background","rgba(255,0,0,0)");
-    }
-  });
-
   // Add scrollspy to <body>
   $('body').scrollspy({target: ".navbar", offset: 50});   
 
@@ -97,6 +87,15 @@ $(document).ready(function(){
     }  // End if
   });
 });
+$(window).on("scroll",function(){
+  	var wn = $(window).scrollTop();
+    if(wn > 1){
+      $(".navbar").css("background","rgba(1,1,1,.5)");
+    }
+    else{
+    	$(".navbar").css("background","rgba(255,0,0,0)");
+    }
+  });
 </script>
 
 </body>
