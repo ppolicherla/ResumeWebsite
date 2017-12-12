@@ -5,16 +5,18 @@
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover; 
-    position: fixed;
+    width: 1920px;
+    height: 1080px;
     top: 0;
-    left: 0;
+    left: 0px;
     min-width: 100%;
     min-height: 100%;
 }
 #proPic {
     border-radius: 50%;
 }
-.jumbotron {
-    padding-bottom: 0px;
-    margin-bottom: 0px;
+.container {
+    margin: 0px;
+    padding: 0px;
+    
 }
