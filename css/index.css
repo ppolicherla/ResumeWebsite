@@ -1,17 +1,7 @@
-
-#backgroundImage {
-    background: url("../images/capetown.jpg") no-repeat center center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover; 
-    width: 1920px;
-    height: 1080px;
-    top: 0;
-    left: 0px;
-    min-width: 100%;
-    min-height: 100%;
+.body {
+    position: relative; 
 }
+
 #proPic {
     border-radius: 50%;
 }
@@ -19,4 +9,36 @@
     margin: 0px;
     padding: 0px;
     
+}
+
+#section1 {
+    padding-top:50px;
+    height:100%;
+    width: auto;
+    color: #fff; 
+    background-image: url("../images/capetown.jpg");
+}
+#section2 {
+    padding-top:50px;
+    height:500px;
+    color: #fff; 
+    background-color: #673ab7;
+}
+#section3 {
+    padding-top:50px;
+    height:500px;
+    color: #fff; 
+    background-color: #ff9800;
+}
+#section41 {
+    padding-top:50px;
+    height:500px;
+    color: #fff; 
+    background-color: #00bcd4;
+}
+#section42 {
+    padding-top:50px;
+    height:500px;
+    color: #fff; 
+    background-color: #009688;
 }
