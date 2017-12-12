@@ -8,7 +8,9 @@
     <meta name="description" content="My App">
 
     <!-- Latest compiled and minified CSS -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <link rel="stylesheet" type="text/css" href="css/index.css">
 </head>
 
@@ -18,22 +20,21 @@
     <nav class ="navbar navbar-inverse navbar-fixed-top" id="my-navbar">
         <div class="container">
             <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#theNavbar">
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
 
-                <a href="" class="navbar-brand">My-App</a>
+              <a href="" class="navbar-brand">Home</a>
             </div><!-- Navbar Header -->
-            <div class="collapse navbar-collapse" id ="navbar-collapse">
+            <div class="collapse navbar-collapse" id ="theNavbar">
                 <ul class="nav navbar-nav">
-                    <li><a href ="#feedback">FeedBack</a></li>
-                    <li><a href ="#gallery">Gallery</a></li>
-                    <li><a href ="#features">Features</a></li>
-                    <li><a href ="#faq">FAQ</a></li>
-                    <li><a href ="#contact">ContactMe</a></li>
+                    <li><a href="#about_me">About Me</a></li>
+                    <li><a href ="#education">Education</a></li>
+                    <li><a href ="#projects">Projects</a></li>
+                    <li><a href ="#contact">Contact Me</a></li>
                 </ul>
             </div>
         </div><!-- end container -->
@@ -54,34 +55,46 @@
     </div>
     <!-- End Jumbotron -->
 
-    <!-- about me -->
-    <div class="aboutMe">
-
+    <div id= "about_me">
+      <div class = "container text-center">
+        <h1>About Me</h1>
+      </div>
     </div>
-    <!-- End about me -->
 
-    <!-- education -->
-    <div class="education">
-
+    <div id= "education">
+      <div class = "container text-center">
+        <h1>Education</h1>
+      </div>
     </div>
-    <!-- End education -->
 
-    <!-- projects -->
-    <div class="projects">
+    <div id= "projects">
+        <div class = "container text-center">
+          <h1>Projects</h1>
+        </div>
+      </div>
 
-    </div>
-    <!-- End projects -->
+      <div id= "contact">
+          <div class = "container text-center">
+            <h1>Contact Me</h1>
+          </div>
+        </div>
 
-    <!-- contact -->
-    <div class="contact">
-      
-    </div>
-    <!-- End contact -->
+<script>
+   $(document).ready(function(){
+     $('body').scrollspy({target: ".navbar", offset: 50});
+     $("#theNavbar a").on('click', function(event) {
+       if(this.hash !== ""){
+         event.preventDefault();
+         var hash = this.hash;
 
-    </div> <!-- End Container -->
-
-    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-    <!-- Latest compiled and minified JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+         $('html, body').animate({
+           scrollTop: $(hash).offset().top
+         }, 800, function(){
+           window.location.hash = hash;
+         });
+       }
+     });
+   });
+</script>
 </body>
 </html>
