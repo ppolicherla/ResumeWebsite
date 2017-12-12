@@ -21,9 +21,9 @@
       </button>
     </div>
     <div>
-      <div class="collapse navbar-collapse" id="myNavbar">
+      <div class="collapse navbar-collapse" id="myNavbar" style="overflow-y: hidden;">
         <ul class="nav navbar-nav">
-          <li><a class= "navbar-brand" href="#section1">Richard Lin</a></li>
+          <li><a href="#section1"><b>Richard Lin</b></a></li>
           <li><a href="#section2">About Me</a></li>
           <li><a href="#section3">Education</a></li>
           <li><a href="#section41">Projects</a></li>
@@ -90,7 +90,7 @@ $(document).ready(function(){
 $(window).on("scroll",function(){
   	var wn = $(window).scrollTop();
     if(wn > 1){
-      $(".navbar").css("background","rgba(1,1,1,.5)");
+      $(".navbar").css("background","rgba(1,1,1,.75)");
     }
     else{
     	$(".navbar").css("background","rgba(255,0,0,0)");
