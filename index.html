@@ -62,16 +62,6 @@
 
 <script>
 $(document).ready(function(){
-  $(window).on("scroll",function(){
-  	var wn = $(window).scrollTop();
-    if(wn > 120){
-      $(".navbar").css("background","rgba(1,1,1,.5)");
-    }
-    else{
-    	$(".navbar").css("background","rgba(255,0,0,0)");
-    }
-  });
-
   // Add scrollspy to <body>
   $('body').scrollspy({target: ".navbar", offset: 50});   
 
@@ -97,6 +87,15 @@ $(document).ready(function(){
     }  // End if
   });
 });
+$(window).on("scroll",function(){
+  	var wn = $(window).scrollTop();
+    if(wn > 1){
+      $(".navbar").css("background","rgba(1,1,1,.5)");
+    }
+    else{
+    	$(".navbar").css("background","rgba(255,0,0,0)");
+    }
+  });
 </script>
 
 </body>

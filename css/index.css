@@ -11,6 +11,14 @@ h1 {
     font-weight: 900;
     font-size: 100px;
 }
+
+#myNavbar a:hover {
+    color: rgb(24, 24, 107);
+}
+
+.nav .active a{
+    background-color: transparent !important;
+}
 .navbar{
     background:transparent;
     background-color:transparent;
