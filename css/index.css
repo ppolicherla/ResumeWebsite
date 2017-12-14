@@ -84,9 +84,11 @@ p {
 .row {
     padding-top: 20px;
 }
+
 #proPic {
     border-radius: 15%;
 }
+
 .container {
     margin: 0px;
     padding: 0px;
@@ -96,8 +98,9 @@ p {
     width: 80%;
     padding-top: 40px;
 }
+
 #sectionContainer {
-    padding-top: 50px;
+    padding-top: 240px;
 }
 
 #section1 {
@@ -227,6 +230,9 @@ p {
 }
 
 @media (max-width: 1440px) {
+    #sectionContainer {
+        padding-top: 170px;
+    }
     #section2 {
         height: 68%
     }
@@ -262,6 +268,9 @@ p {
 }
 
 @media (max-width: 1024px) {
+    #sectionContainer {
+        padding-top: 135px;
+    }
     #section2 {
         height: 68%
     }
@@ -327,6 +336,9 @@ p {
 @media (max-width: 375px) {
     h2 {
         font-size: 50px;
+    }
+    #sectionContainer {
+        padding-top: 105px;
     }
     #section2 {
         height: 100%;
