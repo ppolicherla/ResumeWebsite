@@ -2,9 +2,16 @@ html,
 body {
     position: relative; 
     height: 100%;
+    width: 100%;
     font-family: "Lato", Helvetica, sans-serif;
 }
-
+.container-fluid {
+    min-width: 100%;
+    max-width: 100%;
+    width:100%;
+    overflow-x: hidden;
+    
+}
 h1 {
     font-family: "Lato", Helvetica, sans-serif;
     font-weight: 500;
@@ -15,6 +22,19 @@ h2 {
     font-family: "Lato", Helvetica, sans-serif;
     font-weight: 200;
     font-size: 80px;
+}
+
+
+h3 {
+    font-family: "Lato", Helvetica, sans-serif;
+    font-weight: 100;
+    font-size: 45px;
+}
+
+h4 {
+    font-family: "Lato", Helvetica, sans-serif;
+    font-weight: 100;
+    font-size: 30px;
 }
 
 p {
@@ -29,17 +49,25 @@ p {
     width: 100%;
     text-align: center;
 }
+
+.navbar-inverse .navbar-nav>li>a {
+    color: white;
+}
 #myNavbar a:hover {
-    color: rgb(24, 24, 107);
+    color: rgb(58, 58, 58);
 }
 #myNavbar {
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
 }
 #myNavbar a {
     font-family: "Lato", Helvetica, sans-serif;
     font-weight: 300;
     font-size: 20px;
+}
+
+#details {
+    text-align: left;
 }
 
 .nav .active a{
@@ -64,6 +92,10 @@ p {
     padding: 0px;
 }
 
+#educationIcons {
+    width: 80%;
+    padding-top: 40px;
+}
 #sectionContainer {
     padding-top: 50px;
 }
@@ -97,6 +129,20 @@ p {
     text-align:center;
 }
 
+#education {
+    background-color: rgb(213, 213, 213);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover; 
+    width: 100%;
+    height: 55%;
+    top: 0;
+    left: 0;
+    color: black; 
+    text-align:center;
+}
+
 #section3 {
     background : url("../images/education.jpg") no-repeat center center fixed;
     -webkit-background-size: cover;
@@ -110,6 +156,21 @@ p {
     color: #fff; 
     text-align:center;
 }
+
+#projects {
+    background-color: rgb(213, 213, 213);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover; 
+    width: 100%;
+    height: 68%;
+    top: 0;
+    left: 0;
+    color: black; 
+    text-align:center;
+}
+
 #section41 {
     background : url("../images/projects.jpg") no-repeat center center fixed;
     -webkit-background-size: cover;
@@ -125,21 +186,213 @@ p {
 }
 #section42 {
     padding-top: 25px;
-    height:400px;
+    height:325px;
     color: #fff; 
     background-color: #363636;
     text-align:center;
 }
-
-#myNavbar a:hover {
-    color : #000080;
+#section42 .row {
+    margin-top: -50px;
+}
+#links p {
+    text-align: center;
 }
 
 @media (max-width:767px) {
-    .navbar.navbar-inverse.navbar-fixed-top .container-fluid{
-    background-color: rgba(1, 1, 1, 0.75);
+    .navbar.navbar-inverse.navbar-fixed-top .container-fluid {
+        background-color: rgba(1, 1, 1, 0.75);
     }
+
     #myNavbar a:hover {
         color: white;
+    }
+}
+
+@media (max-width: 1680px) {
+    #section2 .col-sm-2.col-sm-offset-3 #proPic{
+        margin-left: -50px;
+    }
+    #section2 .col-sm-3.col-sm-offset-1{
+        width: 500px;
+    }
+    #projects {
+        height: 75%;
+    }
+    #section42 {
+        height: 330px;
+    }
+    #links p {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 1440px) {
+    #section2 {
+        height: 68%
+    }
+    #section2 .col-sm-2.col-sm-offset-3 #proPic{
+        margin-left: -200px;
+    }
+    #section2 .col-sm-3.col-sm-offset-1{
+        width: 600px;
+    }
+    #education {
+        height: 65%;
+    }
+    #projects {
+        height: 85%;
+    }
+    #projects .col-sm-4.col-sm-offset-1 {
+        width: 600px;
+    }
+    #projects .col-sm-4.col-sm-offset-2 {
+        margin-left: 25px;
+        width: 600px;
+    }
+    #section42 {
+        height: 300px;
+    }
+    #section42 .col-sm-3.col-sm-offset-5{
+        width: 450px;
+        margin-left: 500px;
+    }
+    #links p {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 1024px) {
+    #section2 {
+        height: 68%
+    }
+    #section2 .col-sm-2.col-sm-offset-3 #proPic{
+        margin-left: -225px;
+        width: 275%;
+    }
+    #section2 .col-sm-3.col-sm-offset-1{
+        margin-left: 10px;
+        width: 550px;
+    }
+    #education {
+        height: 60%;
+    }
+    #education h3 {
+        font-size: 29px;
+    }
+    #education p {
+        font-size: 15px;
+    }
+    #education .col-sm-5.col-sm-offset-1{
+        margin-left: 70px;
+        width: 450px;
+    }
+    #educationIcons{
+        width: 200%;
+        margin-left: -30px;
+        margin-top: -10px;
+    }
+    #education .col-sm-4.col-sm-offset-1 {
+        width: 450px;
+        margin-left: 30px;
+    }
+    #projects {
+        height: 90%;
+    }
+    #projects h3 {
+        font-size: 29px;
+    }
+
+    #projects p {
+        font-size: 16px;
+    }
+    #projects .col-sm-4.col-sm-offset-1 {
+        width: 400px;
+    }
+    #projects .col-sm-4.col-sm-offset-2 {
+        margin-left: 25px;
+        width: 400px;
+    }
+    #section42 {
+        height: 300px;
+    }
+    #section42 .col-sm-3.col-sm-offset-5{
+        width: 450px;
+        margin-left: 275px;
+    }
+    #links p {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 1024px) {
+    h2 {
+        font-size: 50px;
+    }
+    #section2 {
+        height: 100%;
+    }
+    #section2 .col-sm-2.col-sm-offset-3 #proPic{
+        margin-left: -10px;
+        width: 75%;
+    }
+    #section2 .col-sm-3.col-sm-offset-1{
+        margin-left: 10px;
+        padding-top: 10px;
+        width: 330px;
+    }
+    #section2 p {
+        font-size: 16px;
+    }
+    #education {
+        height: 60%;
+    }
+    #education h3 {
+        font-size: 29px;
+    }
+    #education p {
+        font-size: 15px;
+    }
+    #education .col-sm-5.col-sm-offset-1{
+        margin-left: 30px;
+        width: 300px;
+    }
+    #educationIcons{
+        width: 25%;
+        margin-left: -30px;
+        margin-top: -10px;
+    }
+    #education .col-sm-4.col-sm-offset-1 {
+        width: 300px;
+        margin-left: 30px;
+    }
+    #projects {
+        height: 90%;
+    }
+    #projects h3 {
+        font-size: 29px;
+    }
+    #projects p {
+        font-size: 16px;
+    }
+    #projects .col-sm-4.col-sm-offset-1 {
+        margin-left:25px;
+        width: 300px;
+    }
+    #projects .col-sm-4.col-sm-offset-2 {
+        margin-left: 25px;
+        width: 300px;
+    }
+    #section41 {
+        height: 15%;
+    }
+    #section42 {
+        height: 275px;
+    }
+    #section42 .col-sm-3.col-sm-offset-5{
+        width: 375px;
+        margin-left: -10px;
+    }
+    #links p {
+        font-size: 16px;
     }
 }
